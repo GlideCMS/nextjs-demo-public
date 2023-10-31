@@ -1,0 +1,12 @@
+node_modules
+.env
+*.js
+*.js.map
+dist
+!*config.js
+*.tsbuildinfo
+.DS_Store
+.npmrc
+.next
+node_modules/
+.DS_Store

@@ -1,0 +1,154 @@
+.acFooter {
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: #43474d;
+  font-family: "SelawikRegular", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.acFooterInner {
+  padding-top: 28px;
+}
+
+.acFooterCopyrightText {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.acFooterTopMenu {
+  margin-bottom: 15px;
+}
+
+.acFooterTopMenuList {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.acFooterBottomMenuList {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.acFooterTopMenuListItem,
+.acFooterBottomMenuListItem {
+  display: inline-block;
+  padding-right: 7px;
+  margin-left: 5px;
+  border-right: 2px solid #d8d8d8;
+  line-height: 14px;
+}
+
+.acFooterBottomMenuListItemNoBorder {
+  border-right: none;
+}
+.acFooterTopMenuListItem:last-child,
+.acFooterBottomMenuListItem:last-child {
+  border-right: 0;
+}
+
+.acFooterTopMenuListItem a,
+.acFooterBottomMenuListItem a {
+  color: #f0f0f0;
+}
+
+.acFooterTopMenuListItem a:hover,
+.acFooterBottomMenuListItem a:hover {
+  text-decoration: none;
+}
+
+.acFooterBottomMenu {
+  margin-bottom: 22px;
+}
+
+.acFooterTopMenuList,
+.acFooterBottomMenuList {
+  padding-left: 0;
+}
+
+.socialMenuIcon {
+  width: 30px;
+  height: auto;
+}
+.acFooterOpenCriticCol {
+  max-width: 190px;
+}
+.acFooterOpenCriticLogo {
+  margin: 7px 0px;
+  margin-left: -5px;
+  object-fit: cover;
+}
+.acFooterOpenCriticBottom {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.3;
+}
+.acFooterOpenCriticTop {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.acFooterOpenCriticCol {
+  margin: 30px auto;
+}
+
+@media (min-width: 576px) {
+  .acFooterInner {
+    max-width: 970px;
+    margin: 0 auto !important;
+  }
+  .acFooterTopMenuList,
+  .acFooterBottomMenuList {
+    padding-left: 0;
+  }
+  .acFooterFirstCol,
+  .acFooterSecondCol {
+    max-width: none;
+    flex: none;
+  }
+
+  .acFooter {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .acFooterOpenCriticBottom {
+    text-align: left;
+  }
+  .acFooterOpenCriticCol {
+    margin: 0px auto;
+    text-align: left;
+  }
+  .acFooterInner {
+    font-size: 16px;
+    font-family: "SelawikRegular", sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  .acFooterCopyrightText {
+    margin-bottom: 8px;
+    font-weight: 700;
+    margin-left: 3px;
+  }
+  .acFooterTopMenu {
+    margin-bottom: 20px;
+  }
+
+  .acFooterFirstCol {
+    // width: 38%;
+    width: auto;
+    text-align: left;
+  }
+
+  .acFooterSecondCol {
+    width: 20%;
+  }
+}

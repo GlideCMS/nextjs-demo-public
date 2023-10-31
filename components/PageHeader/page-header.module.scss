@@ -1,0 +1,248 @@
+.acGlobalNavigation {
+  width: 100%;
+  position: fixed;
+  z-index: 1030;
+  padding-top: 20px;
+  top: 0;
+}
+.acBlankHeader {
+  height: 80px !important;
+  //margin-bottom: 36px;
+  //background-color: #20242c;
+}
+
+.acGlobalNavigation::before {
+  content: "";
+  background-color: #f7f7f7;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.acTopLevelMenu {
+  border-top: solid #d8d8d8 1px;
+  border-bottom: solid #d8d8d8 1px;
+  background-color: white;
+  height: 49px;
+}
+
+.acHeaderLogo {
+  position: absolute;
+  left: 20px;
+  transform: translateY(-15px);
+  width: 100%;
+  max-width: 80px;
+}
+
+.acTopLevelMenuList {
+  clear: both;
+  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  width: 240px;
+  float: right;
+  max-height: 0;
+}
+
+.acTopLevelMenuList.show {
+  border-left: 1px solid gainsboro;
+  height: 99vh;
+  max-height: 99vh;
+}
+
+.acTopLevelMenuLink {
+  font-family: "SelawikSemibold", sans-serif;
+  font-size: 16px;
+  display: block;
+  padding: 13px 16px 13px 16px;
+  color: black;
+}
+
+.acTopLevelMenuLink:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.acTopLevelMenuIcon {
+  user-select: none;
+  position: relative;
+  float: right;
+  padding: 21px 9px 23px 10px;
+  background-image: none;
+  border-left: 1px solid gainsboro;
+  margin-bottom: 0;
+}
+
+.acTopLevelMenuNavicon {
+  background: #000;
+  display: block;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 20px;
+  height: 4px;
+  border-radius: 4px;
+  border: 0px solid #000000;
+}
+
+.acTopLevelMenuNavicon:before,
+.acTopLevelMenuNavicon:after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 20px;
+  border-radius: 4px;
+  border: 0px solid #000000;
+}
+
+.acTopLevelMenuNavicon:before {
+  top: 7px;
+}
+
+.acTopLevelMenuNavicon:after {
+  top: -7px;
+}
+
+.acTopLevelMenuBtn {
+  display: none;
+}
+
+.acTopLevelMenuListItem {
+  text-align: left;
+  border-bottom: 1px solid gainsboro;
+}
+
+.acTopLevelMenuIcon.active .acTopLevelMenuNavicon {
+  background: rgba(0, 0, 0, 0);
+}
+
+.acTopLevelMenuIcon.active ::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.acTopLevelMenuIcon.active ::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+@media (min-width: 673px) {
+  .acTopLevelMenu {
+    height: 53px;
+  }
+
+  .acTopLevelMenuIcon {
+    padding: 20px 9px 28px 10px;
+    margin-bottom: 0;
+  }
+
+  .acGlobalNavigation::before {
+    content: "";
+    background-color: #f7f7f7;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1185px) {
+  .acTopLevelMenuSectionWidth {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .acHeaderLogo {
+    height: 83px !important;
+    width: 82px !important;
+    margin-right: 10px;
+    position: relative;
+    left: -17px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1185px) {
+  .acHeaderLogo {
+    left: -65px;
+    margin-right: -50px;
+  }
+  .acTopLevelMenuList {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .acTopLevelMenu {
+    height: 48.5px;
+  }
+
+  .acTopLevelMenuIcon {
+    padding: 22px 20px;
+    display: none;
+  }
+  .acTopLevelMenuPageWidth {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .acTopLevelMenuSectionWidth {
+    max-width: 950px;
+    margin: auto;
+  }
+
+  .acTopLevelMenuList {
+    float: left;
+    list-style: none;
+    margin-bottom: 0;
+    min-height: 40px;
+    width: auto;
+    top: 21px;
+    padding-top: 0;
+    height: 49px;
+    max-height: none;
+    // margin-top: -1px;
+    margin-left: -10px;
+  }
+  /*
+  .acTopLevelMenu__btn:checked ~ .acTopLevelMenu__list {
+    min-height: 48px;
+  }
+*/
+  .acTopLevelMenuListItem {
+    float: left;
+  }
+
+  .acTopLevelMenuLink {
+    display: inline-block;
+    padding: 12px 16px 13px 16px;
+    font-family: "SelawikSemibold", sans-serif;
+    font-size: 16px;
+  }
+
+  .acTopLevelMenuBtn:checked ~ .acTopLevelMenuList {
+    max-height: 30px;
+  }
+
+  .acTopLevelMenuLinkActive {
+    //border-top: 6px solid;
+    color: black;
+    font-family: "SelawikSemibold", sans-serif;
+    font-size: 16px;
+    font-weight: 600px;
+    //padding-top: 11px;
+  }
+}
+
+.jsActive {
+  background-color: #e4e4e4;
+}

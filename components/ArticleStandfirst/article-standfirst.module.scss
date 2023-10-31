@@ -1,0 +1,28 @@
+.acAticleBodySubtitle {
+    display: block;
+    font-family: 'SelawikBold', sans-serif;
+    color: #333333;
+    font-weight: 700;
+    padding: 0px 10px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 13px;
+  }
+  
+  @media (min-width: 768px) {
+    .acArticleBodySubtitle {
+      padding: 0;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .acArticleBodySubtitle {
+      padding-top: 0px;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 8px;
+      margin-top: 18px;
+    }
+  }

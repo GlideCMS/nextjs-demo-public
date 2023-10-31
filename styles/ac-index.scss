@@ -1,0 +1,348 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables.scss";
+@import "~bootstrap/scss/mixins";
+
+body {
+  font-family: "Selawik", sans-serif;
+  min-width: 320px;
+  background-color: white;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-animation: fadeIn 0.3s ease-in;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.ac-section-center-content {
+  justify-content: space-between;
+}
+
+.gpp-column {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SelawikBold", sans-serif;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.sticky-block {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.ac-article-center-content {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    gap: 10px;
+    flex-direction: column !important;
+    padding-left: 0;
+    padding-right: 0;
+    .gc-col-8 {
+      max-width: 100%;
+    }
+    .gc-col-4 {
+      max-width: 100%;
+    }
+  }
+}
+
+.two-col-panel {
+  background-color: #e3fbfc;
+  border-radius: 3px;
+  padding: 10px 5px 10px 10px;
+  display: flex;
+  justify-content: space-between !important;
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px 5px 0px 10px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 10px 5px 0px 10px;
+    flex-direction: column !important;
+
+    .gd-cp-column {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .two-col-panel .gd-cp-column:first-child {
+    padding-right: 0px !important;
+
+    p {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+/* @include media-breakpoint-down(lg) {
+  padding: 10px 5px 0px 10px;
+} */
+
+.gc-col-6 {
+  div .ac-article-body__img-wrapper {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 5px !important;
+      margin-bottom: 0px !important;
+    }
+
+    @include media-breakpoint-down(md) {
+      // padding-bottom: 5px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .cp-image-preview-close {
+      display: none;
+    }
+  }
+
+  div .ac-article-body__img-wrapper .ac-article-body__img-caption {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+.fr-embedded {
+  width: 98%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .two-col-panel .gd-cp-column:first-child {
+  padding-right: 10px !important;
+} */
+
+.show {
+  border-left: 1px solid gainsboro;
+  height: 99vh;
+  width: 100%;
+  max-height: 99vh !important;
+}
+
+.two-col-panel .gd-cp-column p {
+  padding-top: 0 !important;
+  margin: 0 !important;
+}
+
+.ac-section-container,
+.ac-article-container,
+.ac-basic-page-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 10px;
+  background-color: #fafafa;
+}
+
+.ac-col-left {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.ac-col-right {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.ac-promo-text-color {
+  color: #fff;
+}
+
+.ac-header-logo {
+  position: absolute;
+  left: 10px;
+  margin-top: -12px;
+  height: 72px;
+  width: 114px;
+}
+
+.ac-about-page {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 100px 20px 20px 20px;
+  flex: none;
+}
+
+@media (max-width: 970px) {
+  .cp-image-preview {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .ac-section-center-content {
+    max-width: 970px;
+    margin: auto;
+    background: #fafafa;
+    /*
+    padding: 10px;
+    padding-bottom: 30px;
+    */
+    padding: 10px 10px 30px 10px;
+  }
+
+  .ac-article-container,
+  .ac-basic-page-container {
+    background-color: white;
+  }
+
+  .ac-section-container,
+  .ac-article-container,
+  .ac-basic-page-container {
+    padding: 0 15px 20px 15px;
+    margin-top: 70px;
+  }
+
+  .ac-article-center-content {
+    max-width: 970px;
+    margin: auto;
+    background: #fafafa;
+    padding: 15px;
+    .gc-col-8 {
+      padding-right: 5px;
+    }
+    .gc-col-4 {
+      padding-left: 5px;
+    }
+    @include media-breakpoint-down(md) {
+      flex-direction: column !important;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ac-header-logo {
+    height: 92px;
+    width: 151px;
+  }
+
+  .ac-section-container,
+  .ac-article-container,
+  .ac-basic-page-container {
+    padding: 15px;
+    padding-top: 25px;
+    background-color: #f0f0f0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ac-section-container,
+  .ac-article-container,
+  .ac-basic-page-container {
+    padding-top: 36px;
+    padding-bottom: 0;
+    padding-left: 9px;
+    /* padding-right: 90px; */
+    margin-top: 72px;
+  }
+
+  .ac-article-center-content,
+  .ac-section-center-content {
+    padding-bottom: 0;
+  }
+
+  .ac-article-center-content-tablet,
+  .ac-section-center-content-tablet {
+    padding: 5px 5px 30px 5px;
+    background-color: #fafafa;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  .ac-col-left {
+    padding-right: 0px;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .ac-col-right {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .ac-section-center-content {
+    padding: 15px 15px 30px 15px;
+    .gc-col-8 {
+      padding-right: 10px;
+    }
+    .gc-col-4 {
+      padding-left: 10px;
+    }
+  }
+
+  .ac-padding-0 {
+    padding: 0;
+  }
+
+  .ac-dfp-custom {
+    padding-top: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .ac-col-left {
+    padding-right: 6px !important;
+    display: block;
+  }
+
+  .ac-col-right {
+    padding-left: 14px !important;
+    display: block;
+  }
+
+  .ac-section-container,
+  .ac-article-container,
+  .ac-basic-page-container {
+    margin-top: 69px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ac-section-tablet {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,191 @@
+.acEntityArticles {
+  margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  .acEntityArticles {
+    display: block;
+  }
+  .acBackgroundColor{
+    background-color: #43474D;
+  }
+  .acEntityArticlesTag {
+    font-family: 'Roboto-Mono', sans-serif;
+    font-size: 16px;
+    padding: 10px 10px 6px 10px;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .acEntityArticlesTagWrapper {
+    position: relative;
+    border-bottom: 4px solid;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  
+  .acArticleHeaderTag {
+    color: white;
+    padding-left: 10px;
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .acEntityArticlesTitle {
+      -webkit-line-clamp: 2;
+    }
+  }
+  
+  .pagination{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .paginationItem{
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .paginationLink{
+    padding: 0px 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .paginationLink span{
+    font-size: 12px;
+  }
+  
+  .paginationItem:first-of-type .paginationLink span{
+    padding-right: 4px;
+  }
+  .paginationItem:last-of-type .paginationLink span{
+    padding-left: 4px;
+  }
+  .paginationLink:hover{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .active{
+    background-color: #aaa;
+  }
+  
+  .disabled{
+    pointer-events:none;
+  }
+  
+  .disabled .paginationLink{
+    color: #aaa;
+  }
+  
+  .disabled:hover{
+    background-color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .paginationLink {
+      padding: 0 3px;
+    }
+  }
+  .imageWrapper{
+    box-sizing: content-box;
+    flex-shrink: 0;
+    float: left;
+    height: 78px;
+    padding-bottom: 0;
+    width: 138px;
+  }
+
+  .acEntityArticlesTile {
+    width: 100%;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    background-color: white;
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 14px;
+  }
+  .acEntityArticlesLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 14px;
+  }
+  
+  a.acEntityArticlesLink:hover {
+    text-decoration: none !important;
+    color: transparent;
+  }
+  .acEntityArticlesImg {
+    width: 138px;
+    height: 78px;
+    float: left;
+    padding-bottom: 0px;
+    flex-shrink: 0;
+    box-sizing: content-box;
+  }
+  .acEntityArticlesTitle {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 9px 0 14px 0;
+    font-family: 'SelawikSemibold', sans-serif;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 18px;
+    color: #333333;
+  }
+  .acEntityArticlesTextWrapper {
+    font-family: 'SelawikRegular', sans-serif;
+    font-weight: 400;
+    margin-right: 2px;
+    color: black;
+    line-height: 20px;
+    padding-left: 10px;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 16px;
+    margin-top: 0px;
+    /*margin-bottom: 10px;*/
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .acEntityArticlesTitle {
+      -webkit-line-clamp: 2;
+    }
+  }
+  .paginator{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    .paginatorItem{
+      border: 1px solid #aaa;
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 0 10px;
+     } 
+      
+  }
+ 
