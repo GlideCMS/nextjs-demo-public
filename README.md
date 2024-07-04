@@ -14,7 +14,7 @@ Please check our documentation or reach out via our support portal if you need m
 
 In order to use our Bootstrap application you will need to obtain your environment API details from your GPP representative. Your introductory screen when deploying via Vercel will display welcome message with some useful links and other information which can be useful for start.
 
-![GPP Landing page](https://media.gpp.io/prod/images/widget_background_image/492e2dc13526-screenshot-2023-10-20-at-161951.png "GPP Landing page")
+![GPP Landing page](https://media.sandbox-gc1.gcpp.io/sandbox/images/original/187c97ecec6e-screenshot-2024-07-04-at-141641.png "GPP Landing page")
 
   
   
@@ -49,7 +49,7 @@ Optional:
 
 After you successfully deploy the application, you should able to see a message confirming that your application is configured correctly, and you can then proceed with Glide configuration. This message will remain until you create and publish your first page in Glide.
 
-![GPP Starter](https://media.gpp.io/prod/images/widget_background_image/56b1ae0e111b-screenshot-2023-10-20-at-161933.png "GPP Starter")
+![GPP Starter](https://media.sandbox-gc1.gcpp.io/sandbox/images/original/273bc03fa552-screenshot-2024-07-04-at-141557.png "GPP Starter")
   
   
 

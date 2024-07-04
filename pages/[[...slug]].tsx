@@ -5,7 +5,7 @@ import { renderClientTemplate } from "@glidecms/next-tools";
 import BaseGppLanding from "../components/BaseGppLanding/component";
 import { clientComponents } from "../components/clientComponentLookUp";
 import { CustomNextImage } from "../components/Common/Image/image";
-import glideLogo from "../public/images/glide.svg";
+import glideLogo from "../public/glide logo white.webp";
 import React from "react";
 import { MetaData } from "../components/MetaData/component";
 import { getLoader } from "../components/Common/Loader/loader";

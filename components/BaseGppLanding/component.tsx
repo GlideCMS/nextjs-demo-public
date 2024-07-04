@@ -1,6 +1,6 @@
 import styles from "./base-gpp.module.scss";
 import Image from "next/image";
-import logo from "./assets/Group 6296.svg";
+import logo from "./assets/glide logo white.webp";
 import Link from "next/link";
 import folder from "./assets/Path 1074.svg";
 import bulb from "./assets/bulb.png";
@@ -26,6 +26,10 @@ export default function BaseGppLanding(props) {
           src={logo}
           alt="Glide Publishing Platform"
           className={styles.gppMainLogo}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }} // optional
         ></Image>
         <div className={styles.gppMainTitle}>
           Welcome to GPP's Next.js Bootstrap app
